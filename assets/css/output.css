@@ -2514,6 +2514,10 @@ h6,
     display: grid;
   }
 
+  .sm\:hidden {
+    display: none;
+  }
+
   .sm\:h-\[180px\] {
     height: 180px;
   }
@@ -2544,6 +2548,10 @@ h6,
 
   .sm\:w-\[47px\] {
     width: 47px;
+  }
+
+  .sm\:.w-\[110px\] {
+    width: 110px;
   }
 
   .sm\:w-\[300px\] {

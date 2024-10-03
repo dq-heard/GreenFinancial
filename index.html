@@ -207,7 +207,7 @@
             <nav class="nav-wrapper mobile-nav-wrapper block lg:hidden">
               <div class="mobile-drawer">
                 <div
-                  class="mobile-wid w-[310px] bg-white fixed top-0 h-full px-8 pt-10 z-40"
+                  class="mobile-wid w-[310px] bg-[#1A5E52] fixed top-0 h-full px-8 pt-10 z-40"
                   style="z-index: 99999"
                 >
                   <div class="justify-center mb-10">
@@ -217,42 +217,16 @@
                         alt="green financial agency"
                         class="w-full h-full object-contain"
                       />
-                      <span class="text-xl font-bold mt-4"
+                      <span class="text-xl text-white font-bold mt-4"
                         >Green Financial&nbsp;Agency</span
                       >
                     </div>
                   </div>
-                  <ul class="flex flex-col mb-10">
+                  <ul class="flex flex-col mb-10 text-white">
                     <li>
-                      <a href="#" class="">
+                      <a href="/" class="">
                         <span>Home</span>
-                        <span>
-                          <svg
-                            width="7"
-                            height="5"
-                            viewBox="0 0 7 5"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="fill-current"
-                          >
-                            <path
-                              d="M3.1377 3.85938L0.637695 1.35938C0.43457 1.17188 0.43457 0.84375 0.637695 0.65625C0.825195 0.453125 1.15332 0.453125 1.34082 0.65625L3.49707 2.79688L5.6377 0.65625C5.8252 0.453125 6.15332 0.453125 6.34082 0.65625C6.54395 0.84375 6.54395 1.17188 6.34082 1.35938L3.84082 3.85938C3.65332 4.0625 3.3252 4.0625 3.1377 3.85938Z"
-                            />
-                          </svg>
-                        </span>
                       </a>
-                      <ul class="sub-menu">
-                        <li>
-                          <a href="index.html" class="">
-                            <span>Home</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="index-2.html" class="">
-                            <span>Home two</span>
-                          </a>
-                        </li>
-                      </ul>
                     </li>
                     <li>
                       <a href="#about" class="">
@@ -282,7 +256,7 @@
                   </ul>
                   <div class="flex items-center justify-center space-x-2">
                     <div
-                      class="w-[55px] h-[55px] rounded-full flex justify-center items-center border border-primaryBorder"
+                      class="w-[55px] h-[55px] rounded-full flex justify-center items-center border border-primaryBorder bg-white"
                     >
                       <span class="shake">
                         <svg
@@ -300,11 +274,10 @@
                       </span>
                     </div>
                     <div class="flex flex-col">
-                      <span
-                        class="spline-sans text-sm text-gray-900 font-medium"
-                        >Requesting a Call:</span
+                      <span class="spline-sans text-sm text-white font-medium"
+                        >Give Us a Call Today:</span
                       >
-                      <span class="text-base font-bold text-gray-900"
+                      <span class="text-base font-bold text-white"
                         >(615) 902-5322</span
                       >
                     </div>
@@ -339,7 +312,7 @@
               </div>
               <div class="flex flex-col">
                 <span class="spline-sans text-sm text-white font-medium"
-                  >Requesting a Call:</span
+                  >Give Us a Call Today:</span
                 >
                 <span class="text-base font-bold text-white"
                   >(615) 902-5322</span
@@ -387,7 +360,7 @@
       <section class="hero-area w-full relative" id="home">
         <div
           class="h-full flex xl:justify-center justify-start items-center relative z-20"
-          style="background: linear-gradient(to right, #4d4d4d, transparent)"
+          style="background: linear-gradient(to right, #717171, transparent)"
         >
           <div class="theme-container xl:mx-auto">
             <h1
@@ -486,9 +459,9 @@
                 Maximizing Every Moment
               </h2>
               <p class="xl:w-full max-w-4xl text-base text-white mb-14">
-                Hello. I'm Shedric, a Nashville native with deep roots and a
-                heartfelt passion for family. As a devoted husband and father of
-                five, my journey and career are driven by a love for those
+                Hello. I'm Shedric Green, a Nashville native with deep roots and
+                a heartfelt passion for family. As a devoted husband and father
+                of five, my journey and career are driven by a love for those
                 closest to me. After countless nights spent working in the food
                 industry and missing precious moments, I've made it my mission
                 to help you and your loved ones make the most of every minute
@@ -622,12 +595,12 @@
       >
         <div class="theme-container mx-auto relative">
           <div class="faq-wrapper w-full xl:absolute xl:flex items-center">
-            <div class="w-[740px] xl:block hidden rounded-[10px]">
+            <div class="w-[740px] xl:block hidden">
               <div class="w-full h-[888px]">
                 <img
                   src="./assets/img/fun-fact-thumb.jpg"
                   alt=""
-                  class="w-full h-full object-cover"
+                  class="w-full h-full object-cover rounded-[10px]"
                 />
               </div>
             </div>
@@ -877,28 +850,41 @@
                       required
                     />
                   </label>
-                  <label class="w-full mb-5 block">
-                    <input
-                      type="text"
-                      name="contactInfo"
-                      class="border border-primaryBorder rounded h-[68px] w-full focus:outline-none focus:ring-0 placeholder:text-primary-100 p-5 text-base mb-2"
-                      placeholder="E-mail or Phone"
-                      required
-                    />
-                  </label>
-                  <div class="block sm:flex">
+                  <div class="flex gap-5">
+                    <label class="w-full mb-2 sm:mb-5 block">
+                      <input
+                        type="text"
+                        name="contactEmail"
+                        class="border border-primaryBorder rounded h-[68px] w-full focus:outline-none focus:ring-0 placeholder:text-primary-100 p-5 text-base mb-2"
+                        placeholder="E-mail"
+                        required
+                      />
+                    </label>
+                    <label class="w-full mb-2 sm:mb-5 block">
+                      <input
+                        type="text"
+                        name="contactPhone"
+                        class="border border-primaryBorder rounded h-[68px] w-full focus:outline-none focus:ring-0 placeholder:text-primary-100 p-5 text-base mb-2"
+                        placeholder="Phone"
+                        required
+                      />
+                    </label>
+                  </div>
+
+                  <div class="flex">
                     <label class="w-full block">
                       <span class="block items-center mb-2 text-gray-500"
-                        >Household Size:</span
+                        >Household<span class="inline-flex sm:hidden">:</span>
+                        <span class="hidden sm:inline-flex">Size:</span></span
                       >
-                      <div class="flex items-center">
+                      <div class="flex items-center mb-2 sm:mb-0">
                         <input
                           type="number"
                           name="householdSize"
                           value="1"
                           min="1"
                           max="10"
-                          class="border border-primaryBorder rounded h-[68px] w-[80px] text-center focus:outline-none focus:ring-0 p-5 text-base"
+                          class="border border-primaryBorder rounded h-[68px] w-[80px] sm:w-2/3 text-center focus:outline-none focus:ring-0 p-5 text-base"
                           required
                         />
                       </div>
@@ -910,7 +896,7 @@
                       <input
                         type="datetime-local"
                         name="bestTime"
-                        class="border border-primaryBorder rounded h-[68px] w-full focus:outline-none focus:ring-0 p-5 text-base"
+                        class="border border-primaryBorder rounded h-[68px] w-[250px] focus:outline-none focus:ring-0 p-5 text-base"
                         required
                       />
                     </label>
@@ -946,7 +932,11 @@
             class="w-full sm:w-[600px] xl:w-full grid xl:grid-cols-2 grid-cols-1 gap-10 xl:gap-0 items-center mx-auto"
           >
             <div class="thumb-area relative md:w-[600px] w-full">
-              <img src="./assets/img/about-thumb-2.jpg" alt="" />
+              <img
+                src="./assets/img/about-thumb-2.jpg"
+                class="rounded-[10px]"
+                alt=""
+              />
               <button
                 type="button"
                 onclick="videoPopup()"
@@ -1039,27 +1029,32 @@
                     >Do you genuinely want to help people?</span
                   >
                 </li>
-                <li class="flex space-x-2.5 items-center">
-                  <span>
-                    <svg
-                      width="20"
-                      height="20"
-                      viewBox="0 0 20 20"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <circle cx="10" cy="10" r="10" fill="#028835"></circle>
-                      <path
-                        d="M14.2656 6.98438C14.5703 7.26562 14.5703 7.75781 14.2656 8.03906L8.26562 14.0391C7.98438 14.3438 7.49219 14.3438 7.21094 14.0391L4.21094 11.0391C3.90625 10.7578 3.90625 10.2656 4.21094 9.98438C4.49219 9.67969 4.98438 9.67969 5.26562 9.98438L7.72656 12.4453L13.2109 6.98438C13.4922 6.67969 13.9844 6.67969 14.2656 6.98438Z"
-                        fill="white"
-                      ></path>
-                    </svg>
-                  </span>
-                  <span class="lg:text-base text-sm text-gray-900"
-                    >Are you open to continuous learning on your journey?
-                  </span>
-                </li>
               </ul>
+              <div class="flex space-x-10 items-center">
+                <a href="#contact">
+                  <div
+                    class="px-[46px] py-[20px] bg-primary-500 hover:bg-primary-900 common-trans rounded-lg text-white text-lg spline-sans leading-none"
+                  >
+                    <span>Contact Me</span>
+                  </div>
+                </a>
+                <div href="#" class="sm:flex hidden space-x-5 items-center">
+                  <img
+                    src="assets/img/progress-1.svg"
+                    class="w-[36px] h-[36px]"
+                    alt=""
+                  />
+                  <div>
+                    <span class="text-lg spline-sans text-primary-900 block"
+                      >Use the above form to contact me.</span
+                    >
+                    <span
+                      class="font-semibold text-lg spline-sans text-primary-900 block"
+                      >State your interest where applicable.</span
+                    >
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

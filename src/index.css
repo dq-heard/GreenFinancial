@@ -1,8 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@600&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@600&display=swap");
 
 :root {
   --cursor: rgb(39, 154, 241);
@@ -602,7 +602,7 @@ body {
 }
 
 .recruit-headline {
-  @apply headline-default text-primary-900 mb-5;
+  @apply headline-default text-primary-900;
 }
 .recruit-desc {
   @apply text-base mb-8 max-w-4xl xl:max-w-full;
@@ -810,6 +810,13 @@ button::-moz-focus-inner {
 }
 
 /*responsive*/
+@media (min-width: 640px) {
+  .headline-default {
+    font-size: 40px;
+    line-height: 55px;
+  }
+}
+
 @media (max-width: 1024px) {
   .hero-area {
     height: 600px;
@@ -829,10 +836,6 @@ button::-moz-focus-inner {
 @media (max-width: 640px) {
   .hero-image-1 {
     background-position: 50% center;
-  }
-  .headline-default {
-    font-size: 40px;
-    line-height: 55px;
   }
   .about-shape {
     top: 50px;

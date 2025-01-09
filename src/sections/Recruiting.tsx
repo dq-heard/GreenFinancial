@@ -38,7 +38,7 @@ export const Recruiting: React.FC = () => {
               </button>
             </div>
             <div className="article-area">
-              <h2 className="recruit-headline">
+              <h2 className="recruit-headline mb-5">
                 Looking to join our team? <br />
                 Work that fits your lifestyle
               </h2>

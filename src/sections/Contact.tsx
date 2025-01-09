@@ -78,7 +78,7 @@ export const Contact: React.FC = () => {
                 </div>
                 <div className="flex-gap">
                   <label className="w-full mb-5 block">
-                    <span className="label-span">Best Time for Contact:</span>
+                    <span className="label-span">Schedule a Time:</span>
                     <input
                       type="datetime-local"
                       name="bestTime"

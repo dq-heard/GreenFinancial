@@ -39,7 +39,7 @@ body {
 }
 
 .headline-default {
-  @apply font-bold mb-10;
+  @apply font-bold mb-8;
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
@@ -603,9 +603,10 @@ body {
 
 .recruit-headline {
   @apply headline-default text-primary-900;
+  margin-bottom: 1rem !important;
 }
 .recruit-desc {
-  @apply text-base mb-8 max-w-4xl xl:max-w-full;
+  @apply text-base mb-6 max-w-4xl xl:max-w-full;
 }
 .recruit-list {
   @apply flex flex-col space-y-2.5 mb-8;

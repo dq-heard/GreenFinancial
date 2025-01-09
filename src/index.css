@@ -39,7 +39,7 @@ body {
 }
 
 .headline-default {
-  @apply font-bold mb-8;
+  @apply font-bold mb-4;
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
@@ -385,7 +385,7 @@ body {
   @apply w-full h-full relative z-10;
 }
 .about-shape {
-  @apply w-64 h-64 md:w-[500px] md:h-[500px] xl:w-96 xl:h-96 absolute border-2 border-dashed rounded-full top-16 left-48;
+  @apply w-64 h-64 lg:w-[400px] lg:h-[400px] xl:w-96 xl:h-96 absolute border-2 border-dashed rounded-full top-16 left-48;
   border-color: var(--primary-900);
 }
 .about-shape:before {
@@ -415,7 +415,7 @@ body {
   @apply headline-default text-primary-900;
 }
 .about-text {
-  @apply xl:w-full max-w-4xl text-base mb-14;
+  @apply xl:w-full max-w-4xl text-base mb-8;
 }
 .info-box {
   @apply xl:w-full max-w-4xl flex flex-col border border-primary-500 rounded-xl p-5 space-y-5 mb-5 sm:p-8;
@@ -453,6 +453,7 @@ body {
 }
 .text-white-headline {
   @apply headline-default text-white;
+  margin-bottom: 2rem;
 }
 
 .provider-area {
@@ -493,7 +494,8 @@ body {
 }
 
 .faq-headline {
-  @apply headline-default text-primary-900 mb-11;
+  @apply headline-default text-primary-900;
+  margin-bottom: 2rem !important;
 }
 .faq-item {
   @apply w-full p-3 overflow-hidden rounded bg-secondary sm:px-8 sm:py-5;
@@ -564,7 +566,8 @@ body {
 }
 
 .contact-headline {
-  @apply headline-default text-primary-900 mb-10 font-bold;
+  @apply headline-default text-primary-900 font-bold;
+  margin-bottom: 1.5rem !important;
 }
 .input-field,
 .textarea-field {
@@ -603,7 +606,6 @@ body {
 
 .recruit-headline {
   @apply headline-default text-primary-900;
-  margin-bottom: 1rem !important;
 }
 .recruit-desc {
   @apply text-base mb-6 max-w-4xl xl:max-w-full;

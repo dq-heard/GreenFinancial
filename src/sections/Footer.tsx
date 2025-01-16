@@ -116,7 +116,7 @@ export const Footer = () => {
             </div>
             <div className="border-top">
               <span className="lg:text-base text-sm">
-                ©GFA {new Date().getFullYear()} | All Rights Reserved
+                ©GFA 2024 | All Rights Reserved
               </span>
               <span className="lg:text-base text-sm">
                 Designed by <a href="https://dq-heard.vercel.app/">D. Heard</a>
